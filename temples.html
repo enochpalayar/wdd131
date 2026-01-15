@@ -6,11 +6,19 @@
     <title>Temple Album | WDD 131 | Enoch Palayar</title>
     <meta name="description" content="This website contains pictures of the temples and is a responsive webpage">
     <meta name="author" content="Enoch Palayar">
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/temples.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/temples-large.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles/temples.css">
+        <link rel="stylesheet" href="styles/temples-large.css">
+    </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    </noscript>
+
     <script src="scripts/temples.js" defer></script>
 </head>
 <body>
@@ -33,39 +41,39 @@
         <h1>Home</h1>
         <section class="gallery">
         <figure> 
-            <img src="images/alabang-temple.jpg" alt="Alabang Philippines Temple" loading="lazy">
+            <img src="images/alabang-temple.jpg" alt="Alabang Philippines Temple" fetchpriority="high" width="400" height="300">
             <figcaption>Alabang Philippines Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/bangkok-temple.jpg" alt="Bangkok Thailand Temple" loading="lazy">
+            <img src="images/bangkok-temple.jpg" alt="Bangkok Thailand Temple" loading="lazy" width="400" height="300" fetchpriority="low">
             <figcaption>Bangkok Thailand Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/cebu-temple.jpg" alt="Cebu City Philippines Temple" loading="lazy">
+            <img src="images/cebu-temple.jpg" alt="Cebu City Philippines Temple" loading="lazy" width="400" height="300" fetchpriority="low">
             <figcaption>Cebu City Philippines Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/idaho-falls-temple.jpg" alt="Idaho Falls Idaho Temple" loading="lazy">
+            <img src="images/idaho-falls-temple.jpg" alt="Idaho Falls Idaho Temple" loading="lazy" width="400" height="300" fetchpriority="low">
             <figcaption>Idaho Falls Idaho Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/manila-temple.jpg" alt="Manila Philippines Temple" loading="lazy">
+            <img src="images/manila-temple.jpg" alt="Manila Philippines Temple" loading="lazy" width="400" height="300" fetchpriority="low">
             <figcaption>Manila Philippines Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/portland-temple.jpg" alt="Portland Oregon Temple" loading="lazy">
+            <img src="images/portland-temple.jpg" alt="Portland Oregon Temple" loading="lazy" width="400" height="300" fetchpriority="low">
             <figcaption>Portland Oregon Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" loading="lazy">
+            <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" loading="lazy" width="400" height="300" fetchpriority="low">
             <figcaption>Salt Lake Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/sapporo-temple.jpg" alt="Sapporo Japan Temple" loading="lazy">
+            <img src="images/sapporo-temple.jpg" alt="Sapporo Japan Temple" loading="lazy" width="400" height="300" fetchpriority="low">
             <figcaption>Sapporo Japan Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/urdaneta-temple.jpg" alt="Urdaneta Philippines Temple" loading="lazy">
+            <img src="images/urdaneta-temple.jpg" alt="Urdaneta Philippines Temple" loading="lazy" width="400" height="300" fetchpriority="low">
             <figcaption>Urdaneta Philippines Temple</figcaption>
         </figure>
         </section>
