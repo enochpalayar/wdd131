@@ -1,0 +1,65 @@
+@media (min-width: 800px) {
+    main{
+        max-width: 1200px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    #album-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    h1{
+        margin: 3rem 1rem;
+    }
+
+    nav {
+        display:block;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        justify-content: space-evenly;
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 3rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        margin: 0;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 0.75rem;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: rgb(151, 111, 10);
+        border-radius: 5px;
+        transform: scale(1.02);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 3rem;
+    }
+    
+}

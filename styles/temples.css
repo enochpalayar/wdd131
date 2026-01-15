@@ -1,0 +1,119 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+}
+
+header {
+    padding: 2rem;
+    background-color: #003366;
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#album-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+#album-title.hidden {
+    display: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+
+}
+
+nav a:hover {
+    background-color: rgb(151, 111, 10);
+    transform: scale(1.02);
+}
+
+main {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    margin: 1rem
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+}
