@@ -6,6 +6,8 @@ hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
     hamButton.classList.toggle("open");
     
+    const expanded = hamButton.classList.contains("open");
+    hamButton.setAttribute("aria-expanded", expanded);
     albumTitle.classList.toggle("hidden");
 });
 
