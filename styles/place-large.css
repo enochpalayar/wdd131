@@ -2,7 +2,7 @@
 
     #country-info {
         position: absolute;
-        top: 10rem;
+        top: 13rem;
         left: 2rem;
         width: 260px;
         background-color: var(--box-bg);
@@ -13,7 +13,7 @@
         background-color: var(--box-bg);
         opacity: 0.9;
         position: absolute;
-        top: 30rem;
+        top: 35rem;
         right: 20px;
         width: 260px;
     }
