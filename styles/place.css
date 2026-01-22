@@ -1,0 +1,81 @@
+:root{
+    --primary: #050570;
+    --secondary: #6B0504;
+    --accent: #ffc145;
+    --text-light: #ffffff;
+    --box-bg: #ffffff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: var(--secondary);
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+}
+
+#country{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 640px;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#country-info,
+#weather-info{
+    background-color: var(--box-bg);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 6px;
+}
+
+.data-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.data-list li {
+    display: grid;
+    grid-template-columns: max-content auto;
+    justify-content: center;
+    column-gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.weather-icon-container{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.mobile-icon {
+    width: 70px;
+    height: 70px;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+}

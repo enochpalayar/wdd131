@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page | WDD 131</title>
+    <meta name="description" content="This page generates the weather in my place | Calabanga, Philippines">
+    <meta name="author" content="Enoch Palayar">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="country">Philippines</span>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/tarsier-large.webp" media="(min-width:800px)">
+                <img src="images/tarsier-small.webp" alt="Philippines Tarsier" width="600" height="750">
+            </picture>
+        </div>
+        <section id="country-info">
+            <h2 class="box-title">Data</h2>
+            <ul class="data-list">
+                <li><strong>Area:</strong> 300,000 sq km</li>
+                <li><strong>Population:</strong> 118 million</li>
+                <li><strong>Capital:</strong> Manila</li>
+                <li><strong>Languages:</strong> Tagalog, English</li>
+                <li><strong>Currency:</strong> Philippine Peso</li>
+                <li><strong>Time Zone:</strong> UTC+8</li>
+                <li><strong>Calling Code:</strong> +63</li>
+                <li><strong>Internet TLD:</strong> .ph</li>
+            </ul>
+        </section>
+        <section id="weather-info">
+            <h2 class="weather-title">Weather</h2>
+            <div class="weather-icon-container">
+                <img src="images/weather.svg" alt="Weather icon" class="mobile-icon">
+            </div>
+            <ul class="data-list">
+                <li><strong>Temperature:</strong> <span id="temp">28 °C</span></li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind">10 km/h</span></li>
+                <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🌄 Enoch Olivo Palayar 🌄 Bicol, Philippines</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

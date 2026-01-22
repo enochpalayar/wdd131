@@ -1,0 +1,77 @@
+@media (min-width: 800px) {
+
+    #country-info {
+        position: absolute;
+        top: 10rem;
+        left: 2rem;
+        width: 260px;
+        background-color: var(--box-bg);
+        opacity: 0.9;
+    }
+
+    #weather-info {
+        background-color: var(--box-bg);
+        opacity: 0.9;
+        position: absolute;
+        top: 30rem;
+        right: 20px;
+        width: 260px;
+    }
+
+    .data-list li {
+        display: grid;
+        grid-template-columns: 120px auto;
+        justify-content: initial;
+        column-gap: 0.5rem;
+        text-align: center;
+        margin: 0.3rem 0;
+    }
+
+    .box-title {
+        position: relative;
+        background-color: var(--accent);
+        width: 12rem;
+        padding: 1rem;
+        text-align: left;
+        padding-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        bottom: 15px;
+        right: 2rem;
+    }
+
+    .weather-title {
+        position: relative;
+        background-color: var(--accent);
+        width: 12rem;
+        padding: 1rem;
+        text-align: left;
+        padding-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        bottom: 15px;
+        right: 2rem;
+    }
+
+    .weather-title::after {
+        content: "  ⛅";
+        
+    }
+
+    .mobile-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    #country-info,
+    #weather-info{
+        position: static;
+        margin: 1rem auto;
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        opacity: 1;
+    }
+}
