@@ -1,0 +1,145 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+}
+
+header{
+    padding: 2rem;
+    background-color: #003366;
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#album-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#menu{
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+
+}
+
+#album-title.hidden {
+    display: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+nav{
+    display: none;
+    text-align: center;
+    padding-top: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2rem;
+
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav a{
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    background-color: #33AABB;
+    transform: scale(1.02);
+
+}
+
+main {
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.gallery section{
+    background-color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.gallery section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.gallery h2 {
+    color: #003366;
+    margin-bottom: 0.5rem;
+}
+
+.gallery p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+.label {
+    font-weight: bold;
+    color: #003366;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 1rem;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+}
