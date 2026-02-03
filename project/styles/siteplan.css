@@ -1,0 +1,41 @@
+:root{
+    --primary: #33AABB;
+    --secondary: #253745;
+    --section: #1E2A36;
+    --text: #ECF0F1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--section);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
+}
+
+header, footer {
+    background-color: var(--secondary);
+    color: var(--text);
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--section);
+    color: var(--text);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+}
