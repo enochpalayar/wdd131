@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Montserrat", sans serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -59,6 +59,7 @@ textarea {
     border-radius: 0.375rem;
     font-size: 1rem;
     min-height: 44px;
+    font-family: "Open Sans", sans-serif;
 }
 
 textarea {
