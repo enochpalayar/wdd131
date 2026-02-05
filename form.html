@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This site contains the product review form for customers and it had the ability to store date in local storage">
+    <meta name="author" content="Enoch Palayar">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>Product Review</header>
+    <main>
+        <form method="get" action="review.html">
+            <div class="field">
+                <label for="product" class="required">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+            <div class="field">
+                <span class="required">Overall Rating</span>
+                <div class="rating">
+                    <label><input type="radio" name="rating" value="1" required /> &star;</label>
+                    <label><input type="radio" name="rating" value="2" /> &star;&star;</label>
+                    <label><input type="radio" name="rating" value="3" /> &star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="4" /> &star;&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="5" /> &star;&star;&star;&star;&star;</label>
+                </div>
+            </div>
+            <div class="field">
+                <label for="installDate" class="required">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required />
+            </div>
+            <div class="field features">
+                <span>Which features did you find useful in the product?</span>
+                <em>(Check all that apply)</em>
+                <label><input type="checkbox" name="features" value="durability" /> Durability</label>
+                <label><input type="checkbox" name="features" value="ease" /> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance" /> Performance</label>
+                <label><input type="checkbox" name="features" value="design" /> Design</label>
+            </div>
+            <div class="field">
+                <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+            <div class="field">
+                <label for="username">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="username" name="username" />
+            </div>
+            <div class="field">
+                <input type="submit" value="Post Review" />
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🌄 Enoch Olivo Palayar 🌄 Bicol, Philippines</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
