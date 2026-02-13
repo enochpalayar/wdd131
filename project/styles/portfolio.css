@@ -435,7 +435,7 @@ form button:hover {
     margin-top: 1rem;
     text-decoration: none;
     background-color: var(--primary);
-    color: var(--text);
+    color: var(--secondary);
     padding: 1rem 2rem;
     border-radius: 4px;
     font-weight: bold;
