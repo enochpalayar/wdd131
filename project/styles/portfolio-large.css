@@ -1,0 +1,130 @@
+@media (min-width: 768px) {
+    #menu, #close {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        margin-right: 3rem;
+        gap: 1.5rem;
+        background: none;
+        position: static;
+        padding: 0;
+        height: auto;
+        width: auto;
+    }
+
+    nav a {
+        margin: 0;
+    }
+    /*INDEX PAGE*/
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        column-gap: 2rem;
+        row-gap: 0.5rem;
+        align-items: center;
+        text-align: left;
+        padding: 2rem 5%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    #greeting {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        align-self: end;
+        margin-bottom: 0;
+    }
+    .hero h2 {
+        grid-column: 1 / 2;
+        grid-row: 2;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .hero-image {
+        grid-column: 2 / 3;
+        text-align: center;
+    }
+    
+    .hero-image img {
+        max-width: 400px;
+        border-radius: 6px;
+    }
+
+    .hero p{
+        grid-column: 1 / 2;
+        grid-row: 3;
+        margin: 1rem 0;
+        max-width: 100%;
+    }
+
+    .hero a {
+        grid-column: 1 / 2;
+        grid-row: 4;
+    }
+
+    .socials {
+        grid-column: 1 / 2;
+        grid-row: 5;
+        justify-content: flex-start;
+        margin-top: 1rem;
+        position: static;
+    }
+
+    .hero-image {
+        grid-column: 2 / 3;
+        grid-row: 1 / 6;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        max-width: 380px;
+        height: auto;
+    }
+
+    /*ABOUT PAGE*/
+    .about-content {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        gap: 3rem;
+        align-items: start;
+        text-align: left;
+    }
+
+    .about-title {
+        font-size: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .about-image {
+        grid-column: 1;
+        position: sticky;
+        top: 2rem;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-text {
+        grid-column: 2;
+    }
+
+    /* PROJECTS PAGE*/
+    .projects-title {
+        font-size: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .indicator {
+        display: none;
+    }
+
+}

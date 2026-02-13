@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects page - This contains some of my workoutputs as a Funnel Builder, Web Designer and, Virtual Assistant">
+    <meta name="author" content="Enoch Palayar">
+    <title>Projects | Enoch Palayar</title>
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/portfolio-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="scripts/portfolio.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/enoch-logo.png" alt="Enoch Logo" width="100" height="100" id="logo">
+            </a>
+                <button id="menu" aria-label="Menu" aria-expanded="false">☰</button>
+            <div class="nav-links">
+                <button id="close" aria-label="Close Menu">✖</button>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section class="projects-container">
+        <h1 class="projects-title">My Projects</h1>
+        <div class="project-card">
+            <h2>Graphic Design</h2>
+            <div class="carousel" id="designCarousel"></div>
+            <div class="indicator" id="designIndicator"></div>
+        </div>
+        <div class="project-card">
+            <h2>Funnel Builds</h2>
+            <div class="carousel" id="funnelCarousel"></div>
+            <div class="indicator" id="funnelIndicator"></div>
+        </div>
+        <div class="project-card">
+            <h2>Course Projects</h2>
+            <div class="carousel" id="courseCarousel"></div>
+            <div class="indicator" id="courseIndicator"></div>
+        </div>
+        <div class="project-card">
+            <h2>Executive Assistant Outputs</h2>
+            <div class="carousel" id="assistantCarousel"></div>
+            <div class="indicator" id="assistantIndicator"></div>
+        </div>
+    </section>
+</main>
+<div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="lightbox-caption"></div>
+</div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Enoch Olivo Palayar | Bicol, Philippines</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
