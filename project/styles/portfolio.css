@@ -3,7 +3,7 @@
     --secondary: #253745;
     --section: #1e2a36;
     --text: #ecf0f1;
-    --required: #ff4d4d;
+    --required: #00EAFF;
     --button: #000000;
 }
 
@@ -360,7 +360,7 @@ section {
 
 .contact-section h1 {
     margin-bottom: 1.5rem;
-    color: var(--primary);
+    color: var(--text);
 }
 
 form {
